@@ -1,4 +1,6 @@
 # This tool for generating spam transactions on the testnet
+_Note. This was created by a non-professional. There may be errors and bugs, any help in editing is welcome
+At this stage, it is designed to [umee testnet](https://umee.cc)_
 
 You need to import your address (with test tokens) with the flag `--keyring-backend test`
 
