@@ -19,7 +19,7 @@ func main() {
 	fmt.Fscan(os.Stdin, &amount)
 
 	var fee string
-	fmt.Print("Enter amount of tokend for fees (e.g. 100stake): ")
+	fmt.Print("Enter amount of tokens for fees (e.g. 100stake): ")
 	fmt.Fscan(os.Stdin, &fee)
 
 	var chain_id string
