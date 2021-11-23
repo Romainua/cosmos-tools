@@ -2,17 +2,15 @@
 
 go run main.go
  
-chmod +x varible.sh
-
-source ./varible.sh
-
-rm varible.sh
+cat varible.sh >> ~/.profile
 
 source ~/.profile
 
-tail -n5  ~/.profile
+rm varible.sh
 
-echo -e "Check your variables above☝️"
+tail -n6  ~/.profile
+
+echo -e "\nCheck your variables above☝️"
 
 read -n 1 -s -r -p "Press any button to continue"
 
