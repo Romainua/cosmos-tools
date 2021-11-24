@@ -25,6 +25,6 @@ do
         umeed tx bank send $WALLET $RECEIVER $AMOUNT --from $WALLET --fees $FEE --chain-id $CHAIN_ID -y --keyring-backend test --note "$MEMO"
 
 	echo -e "Still spamming😈"
-sleep 5
+sleep 2
 
 done
