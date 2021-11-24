@@ -1,5 +1,5 @@
 # This tool for generating spam transactions on the testnet
-_Note. This was created by a non-professional. There may be errors and bugs, any help in editing is welcome
+_Note. This was created by a non-professional. There may be errors and bugs, any PR is welcome.
 At this stage, it is designed to [umee testnet](https://umee.cc)_
 
 ## Setup
