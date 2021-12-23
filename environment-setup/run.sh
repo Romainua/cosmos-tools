@@ -2,14 +2,14 @@
 #menu
 
 #install golang
-function golang {
-        git clone https://github.com/udhos/update-golang &
-        wait; cd update-golang &
-        wait; sudo ./update-golang.sh &
-        wait; sudo echo PATH=$PATH:/usr/local/go/bin >> ~/.profile
-        wait; source $HOME/.profile;
+#function golang {
+#        git clone https://github.com/udhos/update-golang &
+#        wait; cd update-golang &
+#        wait; sudo ./update-golang.sh &
+#        wait; sudo echo PATH=$PATH:/usr/local/go/bin >> ~/.profile
+#        wait; source $HOME/.profile;
 
-}
+#}
 #install all
 function all () {
         sudo apt update && sudo apt upgrade -y &
@@ -106,32 +106,32 @@ do
 	done;
 }
 #install golang
-function go () {
-        PS3='Do you want install golang?'
-        data=("Yes" "No")
-        select answer in "${data[@]}"
-do 
-        case $answer in
-        "Yes")
-        goinstal
-	;;
-        "No")
-        goinstal2
-        ;;
-        esac
-	done;
-}
+#function go () {
+#        PS3='Do you want install golang?'
+  #      data=("Yes" "No")
+ #       select answer in "${data[@]}"
+#do 
+   #     case $answer in
+  #      "Yes")
+ #       goinstal
+#	;;
+    #    "No")
+   #     goinstal2
+  #      ;;
+ #       esac
+#	done;
+#}
 #install custom 
-function goinstal () {
-        $update &
-        wait; $build &
-        wait; $jq &
-        wait; $git &
-        wait; $ufw &
-        golang
-	exit 0;
+#function goinstal () {
+#        $update &
+#        wait; $build &
+#        wait; $jq &
+#        wait; $git &
+#        wait; $ufw &
+#        golang
+#	exit 0;
 
-}
+#}
 function goinstal2 () {
 	$update &
         wait; $build &
