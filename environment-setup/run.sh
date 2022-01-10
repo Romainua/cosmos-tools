@@ -16,8 +16,8 @@ function all () {
         wait; sudo apt-get install -y build-essential &
         wait; sudo apt install jq -y &
         wait; sudo apt-get install git -y &
-        wait; sudo apt-get install ufw -y
-        wait; golang;
+        wait; sudo apt-get install ufw -y;
+#        wait; golang;
 
 }
 #custom select update
