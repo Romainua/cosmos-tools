@@ -2,8 +2,8 @@
 
 ############ START - SET PROPERTIES #########
 
-ADDRESS="archway1t0ygwu08cyenymumuvupfnn89zeu25k3n7g0gc"
-VALIDATOR="archwayvaloper1t0ygwu08cyenymumuvupfnn89zeu25k3n6pd93"
+ADDRESS="address"
+VALIDATOR="valoper"
 KEY_NAME="val"
 #PASS="ПАРОЛЬ"
 
