@@ -1,2 +1,2 @@
 # cosmos-tools
-tools for test cosmos network projects
+tools for cosmos network projects
