@@ -5,7 +5,7 @@
 ADDRESS="address"
 VALIDATOR="valoper"
 KEY_NAME="val"
-#PASS="ПАРОЛЬ"
+PASS="PASSWORD"
 
 CHAIN_ID="torii-1" #for mainnet: stargaze-1
 GAS_VALUE="auto" #for example: 200000 or auto
@@ -18,7 +18,7 @@ GAS_VALUE="auto" #for example: 200000 or auto
 # Withdraw
         while :
 do
-        echo `your password` | archwayd tx distribution withdraw-rewards "${VALIDATOR}"  --from "${KEY_NAME}" --chain-id=${CHAIN_ID} --gas="${GAS_VALUE}" -y
+        echo $PASS | archwayd tx distribution withdraw-rewards "${VALIDATOR}"  --from "${KEY_NAME}" --chain-id=${CHAIN_ID} --gas="${GAS_VALUE}" -y
 
 sleep 10s
 
@@ -30,7 +30,7 @@ AMOUNT_FINAL=$AMOUNT"utorii"
 
 # Delegate
 #starsd tx staking delegate "${VALIDATOR}" "${AMOUNT_FINAL}" --from "${KEY_NAME}" --chain-id=${CHAIN_ID} --gas="${GAS_VALUE}"  -y
-echo `your password` | archwayd tx staking delegate "${VALIDATOR}" "${AMOUNT_FINAL}" --from "${KEY_NAME}" --chain-id=${CHAIN_ID} --gas="${GAS_VALUE}" -y
+echo $PASS | archwayd tx staking delegate "${VALIDATOR}" "${AMOUNT_FINAL}" --from "${KEY_NAME}" --chain-id=${CHAIN_ID} --gas="${GAS_VALUE}" -y
 date
 sleep 15s
 done;
