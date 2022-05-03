@@ -1,4 +1,4 @@
-It is script for auto-delegation on the Archway testnet Torii-1
+# It is script for auto-delegation on the Archway testnet Torii-1
 
 Git clone this repository
 
